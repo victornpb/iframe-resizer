@@ -271,8 +271,8 @@
 			function debouncedTrigger(){
 				trigger(
 					'Send Page Info',
-					'pageInfo:' + getPageInfo(), 
-					iframe, 
+					'pageInfo:' + getPageInfo(),
+					iframe,
 					iframeId
 				);
 			}
@@ -862,7 +862,7 @@
 
 		function createMutationObserver(){
 			var
-				target = document.querySelector('body'),
+				target = document.getElementsByTagName('body')[0],
 
 				config = {
 					attributes            : true,
@@ -960,7 +960,7 @@
 			case 'undefined':
 			case 'string':
 				Array.prototype.forEach.call(
-					document.querySelectorAll( target || 'iframe' ),
+					target ? [document.getElementById(target)] : document.getElementsByTagName('iframe'),
 					init.bind(undefined, options)
 				);
 				break;

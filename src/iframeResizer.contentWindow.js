@@ -575,7 +575,7 @@
 				addImageLoadListener(mutation.target);
 			} else if (mutation.type === 'childList'){
 				Array.prototype.forEach.call(
-					mutation.target.querySelectorAll('img'),
+					mutation.target.getElementsByTagName('img'),
 					addImageLoadListener
 				);
 			}
@@ -614,7 +614,7 @@
 
 		function createMutationObserver(){
 			var
-				target = document.querySelector('body'),
+				target = document.getElementsByTagName('body')[0],
 
 				config = {
 					attributes            : true,
@@ -758,7 +758,7 @@
 	}
 
 	function getAllElements(){
-		return document.querySelectorAll('body *');
+		return document.body.getElementsByTagName('*');
 	}
 
 	var
