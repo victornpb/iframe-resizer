@@ -38,7 +38,7 @@
 			enablePublicMethods       : true,
 			heightCalculationMethod   : 'bodyOffset',
 			id                        : 'iFrameResizer',
-			interval                  : 32,
+			interval                  : 250,
 			log                       : false,
 			maxHeight                 : Infinity,
 			maxWidth                  : Infinity,
