@@ -32,7 +32,7 @@
     "grunt-contrib-qunit": "0.3.0",
     "grunt-contrib-uglify": "0.9.x",
     "grunt-contrib-watch": "~0.5.2",
-    "grunt-jsonlint": "1.0.x",
+    "grunt-jsonlint": "2.1.x",
     "grunt-karma": "^0.12.0",
     "grunt-karma-coveralls": "^2.5.4",
     "grunt-shell": "0.6.x",
