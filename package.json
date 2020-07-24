@@ -37,7 +37,7 @@
     "grunt-karma-coveralls": "^2.5.4",
     "grunt-shell": "0.6.x",
     "jasmine": "^2.3.2",
-    "jasmine-core": "^2.3.4",
+    "jasmine-core": "^3.6.0",
     "jasmine-jquery": "^2.1.0",
     "jit-grunt": "0.3.x",
     "jquery": "^2.1.4",
